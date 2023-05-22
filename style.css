@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -12,7 +10,7 @@
 h1,h2,
 h3,h4,
 h5,h6{
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Merriweather', serif;
     font-weight: 700;
 }
 
@@ -274,6 +272,10 @@ color: #AFADB5;
     box-shadow: 0px 4px 10px  rgba(71, 100, 195, 0.1);
 }
 
+.card:hover{
+    box-shadow: 0px 4px 10px  rgba(71, 100, 195, 0);
+}
+
 .card img{
     width: 100%;
 }
@@ -308,7 +310,7 @@ color: #AFADB5;
 
 /*about us start*/
 .about-us{
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
     max-width: 100%;
     height: 100%;
     padding-top: 1rem ;
@@ -402,63 +404,121 @@ margin: 0 1rem;
 /*team ends*/
 
 
+/*references starts*/
+.references{
+    margin-bottom: 5rem;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 1rem ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+    color: #091638;
+}
+
+.references h1{
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.ref-text{
+    font-size: 1.5rem;
+}
+
+.testimonials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.testimonials p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    
+}
+
+.testimonials .test1{
+    width: 100%;
+    background: #F3F3FA;
+    margin-right: 2rem ;
+    padding: 2rem;
+}
+
+
+.testimonials .test2{
+    width: 100%;
+    background: #F3F3FA;
+    padding: 2rem;
+}
+
+.testimonials h3{
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+/*references ends*/
+
+
+
+/*newsletter start*/
+.newsletter{
+    margin-bottom: 2rem;
+    max-width: 100%;
+    height: 100%;
+    padding-top: 1rem ;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+}
+
+.subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub2{
+    margin-left: 10rem;
+}
+
+.sub2 h2{
+    color: #141B2D;
+    font-size: 2rem;
+}
+
+.sub2 p{
+    margin: 1rem 0;
+    color: #141B2D;
+    font-size: 1.5rem;
+}
+/*newsletter end*/
+
+
 /*footer starts*/
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
+    margin-top: 1rem;
     height: 100%;
     max-width: 100%;
     padding-left: 4rem;
     padding-right: 4rem;
+    background-color: #1C3988;
 
   }
 
-  .logo p{
-    color: #151411;
-    font-weight: 500;
-    margin-top: 1rem;
-    line-height: 1.7rem;
-    font-size: 1.1rem;
-
-  }
-
-.footer-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 4rem;
-    align-items: start;
- 
-  }
-
-  .footer-links h4 {
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1.2rem;
-    color: #151411;
-  }
-
-  .footer-links ul li {
-    margin: 1rem 0;
-    font-weight: 500;
-    font-size: 1.2rem;
-    font-style: normal;
-    cursor: pointer;
-    transition: ease-out 0.3s;
-  }
-  
-  .footer-links ul li:hover {
-    color: #518581;
+  .logo{
+    padding: 4rem;
+    display: grid;
+    place-items: center;
   }
 
   .Developer {
     text-align: center;
     font-size: 1rem;
     font-weight: 600;
-    color: #080807;
-    margin: 0;
+    color: #ffffff;
+    padding-bottom: 1rem;
   }
 /*footer ends*/
 
@@ -479,7 +539,7 @@ footer {
     position: absolute; 
     top: 90px;
     left: 80px;
-    background: #091638;
+    background: #1C3988;
     height: 70vh;
     width: 330px;
     z-index: 999;
@@ -526,6 +586,10 @@ footer {
         cursor: pointer;
         top: 20px;
         left: 40px;
+    }
+
+    .nav-btn{
+        display: none;
     }
 
     .hero-container{
@@ -711,67 +775,91 @@ footer {
         text-align: center;
     }
     
+    .references{
+        max-width: 100%;
+        height: 100%;
+        padding: 2rem;
+        margin-bottom: 2rem;
+     
+    }
+    
+    .references h1{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .ref-text{
+        font-size: 1rem;
+    }
+    
+    .testimonials{
+        display: flex;
+       flex-direction: column;
+        margin-top: 2rem;
+    }
+    
+    .testimonials p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 0;
+        line-height: 1.6rem;   
+    }
+    
+    .testimonials .test1{
+        margin: 2rem 0;
+    
+    }
+    
+    .testimonials h3{
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .testimonials h5{
+        font-size: 0.8rem;
+    }
+    
+    .newsletter{
+        max-width: 100%;
+        height: 100%;
+        padding: 2rem;
+    }
+    
+    .subscribe{
+        flex-direction: column;
+    }
+
+    .sub1 img{
+        width: 100px;
+    }
+    
+    .sub2{
+        margin: 2rem 0;
+    }
+    
+    .sub2 h2{
+        font-size: 1.5rem;
+    }
+    
+    .sub2 p{
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
 
 
 footer {
-    flex-wrap: wrap;
     height: 100%;
     max-width: 100%;
-    justify-content: flex-start;
-    align-items: start;
- 
-
-  }
-
-  .logo p{
-    color: #AFADB5;
-    font-weight: 500;
-    margin-top: 1rem;
-    line-height: 1.7rem;
-    font-size: 0.8rem;
-    
-  }
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 100%;
-    height: 100%;
-    gap: 2rem;
-    align-items: start;
-    margin-top: 2rem;
-    flex-direction: row;
- 
-  }
-
-  .footer-links h4 {
-    margin-bottom: 1rem;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #151411;
-  }
-
-  .footer-links ul li {
-    margin: 1rem 0;
-    font-weight: 500;
-    color: #AFADB5;
-    font-size: 0.8rem;
-    font-style: normal;
-    cursor: pointer;
-    transition: ease-out 0.3s;
-  }
-  
-  .footer-links ul li:hover {
-    color: #518581;
   }
 
   .Developer {
     text-align: center;
     font-size: 0.7rem;
     font-weight: 500;
-    color: #080807;
+    color: #ffffff;
     
   }
+
 
 
     
